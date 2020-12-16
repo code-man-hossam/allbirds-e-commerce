@@ -1,0 +1,162 @@
+.buyShoes {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 100px;
+}
+
+.buyShoes-img {
+  width: 500px;
+  height: 300px;
+  margin-left: 150px;
+  overflow: hidden;
+}
+
+.buyShoes-img:hover img {
+  transform: scale(1.1);
+}
+
+.buyShoes-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.buyShoes-info {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buyShoes-info h3 {
+  color: #000033;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.buyShoes-info p {
+  color: #000033;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.buyShoes-info h5 {
+  font-size: 0.9rem;
+  color: #000033;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.buyShoes-info h5 span {
+  font-size: 0.7rem;
+}
+
+.buyShoes-colors {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.buyShoes-colors .ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ball1 {
+  background-color: grey;
+}
+
+.ball2 {
+  background-color: #111;
+}
+
+.ball3 {
+  background-color: #74cff3;
+}
+
+.buyShoes-size {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buyShoes-size .size {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #111;
+  cursor: pointer;
+}
+
+.size-btn {
+  margin-top: 10px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2bc5c5;
+  background-color: #9fbebe;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.size-btn.active {
+  background-color: #111;
+  color: #fff;
+}
+
+@media only screen and (max-width: 950px) {
+  .buyShoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .buyShoes-img {
+    width: 400px;
+    height: 300px;
+    margin-left: 0px;
+  }
+
+  .buyShoes-info {
+    width: 400px;
+    margin-left: 30px;
+  }
+  .buyShoes-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .buyShoes-info p {
+    font-size: 0.7rem;
+  }
+  .buyShoes-info h5 {
+    font-size: 0.8rem;
+    color: #000033;
+  }
+  .buyShoes-colors {
+    width: 100px;
+  }
+
+  .buyShoes-colors .ball {
+    width: 30px;
+    height: 30px;
+  }
+
+  .buyShoes-size {
+    width: 180px;
+  }
+
+  .buyShoes-size .size {
+    width: 20px;
+    height: 20px;
+  }
+
+  .size-btn {
+    width: 200px;
+  }
+}

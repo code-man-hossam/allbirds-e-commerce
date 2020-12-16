@@ -1,0 +1,120 @@
+.materials {
+  width: 100%;
+}
+
+.materials .materials-hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://media1.popsugar-assets.com/files/thumbor/63fWIaFMGLWuBsB08sG-4rXXT-A/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/11/16/744/n/1922729/tmp_TGtZ46_7b375b2dbb44c0f7_DSC06435.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.materials-hero h1 {
+  width: 70%;
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  transform: rotate(-10deg);
+  text-align: center;
+}
+
+.materials-desc {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eee;
+}
+
+.materials-desc img {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.materials-desc h3 {
+  color: rgb(27, 27, 51);
+  width: 60%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.materials-commrace {
+  margin-top: 30px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.commrace-list h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.commrace-list ul {
+  list-style: none;
+}
+
+.commrace-list ul li {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.materilas-overview {
+  width: 100%;
+  height: 70vh;
+  background-color: #eee;
+}
+
+.overview-container {
+  width: 80%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.overview-img {
+  flex: 1;
+  height: 100%;
+  align-self: flex-start;
+}
+
+.overview-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overview-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.overview-info h3 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: rgb(23, 20, 41);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.overview-info p {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  color: rgb(23, 20, 41);
+  text-align: center;
+}

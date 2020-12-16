@@ -1,0 +1,140 @@
+.shoes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 150px 30px 50px 0px;
+  position: relative;
+}
+
+.shoes h1 {
+  margin-left: 30px;
+  margin-bottom: 50px;
+  font-size: 2rem;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.shoes .shoe-container {
+  width: 1500px;
+  display: flex;
+  transition: all 0.3s linear;
+}
+
+.shoe-container a {
+  text-decoration: none;
+}
+
+.shoe-container.firstMove {
+  transform: translateX(-420px);
+}
+.shoe-container .shoe-col {
+  width: 400px;
+  height: 300px;
+  margin-left: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.shoe-col .shoe-colImg {
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.shoe-colImg:hover img {
+  transform: scale(1.1);
+}
+.shoe-colImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 200ms;
+}
+.shoe-col h3 {
+  margin: 20px;
+  color: #333;
+  font-size: 0.9rem;
+}
+.shoe-col p {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.shoes .shoe-leftBtn {
+  position: absolute;
+  top: 200px;
+  left: 830px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddd;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.shoe-leftBtn.hide {
+  display: none;
+}
+
+.shoes .shoe-rightBtn {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(180deg);
+  border-radius: 50%;
+  background-color: #ddd;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.shoe-rightBtn.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .shoes {
+    margin: 100px 30px 50px 0px;
+  }
+  .shoes h1 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+  }
+  .shoes .shoe-container {
+    width: 1000px;
+  }
+  .shoe-container .shoe-col {
+    width: 300px;
+    height: 250px;
+  }
+  .shoe-col .shoe-colImg {
+    width: 300px;
+    height: 200px;
+  }
+  .shoe-col h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    color: #333;
+    font-size: 0.8rem;
+  }
+  .shoe-col p {
+    font-size: 0.75rem;
+  }
+  .shoes .shoe-leftBtn {
+    top: 320px;
+    left: 330px;
+    width: 40px;
+    height: 40px;
+  }
+  .shoes .shoe-rightBtn {
+    top: 320px;
+    left: 170px;
+    width: 40px;
+    height: 40px;
+  }
+}

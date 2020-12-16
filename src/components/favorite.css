@@ -1,0 +1,186 @@
+.favorite {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.favorite h1 {
+  font-size: 1.3rem;
+  margin: 20px auto;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.favorite .btns {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 3px solid #ddd;
+  position: relative;
+}
+.btns button {
+  background-color: transparent;
+  color: #aaa;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 200ms;
+}
+.btns button:hover {
+  color: #333;
+}
+.btns .underline {
+  position: absolute;
+  bottom: -2.3px;
+  left: 30px;
+  width: 80px;
+  height: 2px;
+  background-color: #333;
+  transition: 200ms;
+}
+.underline.secIndex {
+  transform: translateX(170px);
+}
+.underline.lastIndex {
+  transform: translateX(350px);
+}
+.favCols {
+  width: 1200px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-4 {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  cursor: pointer;
+}
+.col-4 .colImg {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+.col-4:hover img {
+  transform: scale(1.1);
+}
+
+.colImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 200ms;
+}
+.col-4 .overley {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: -1;
+  transform: scale(0);
+  transition: 400ms;
+}
+.col-4:hover .overley {
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1);
+}
+.overley button {
+  width: 200px;
+  padding: 15px 0px;
+  margin: 10px auto;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: 200ms;
+}
+.overley button a {
+  text-decoration: none;
+}
+.overley button:hover {
+  background-color: #333;
+  color: #fff;
+}
+.col-4 h3 {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  color: #333;
+  border-bottom: 3px solid #ddd;
+}
+.col-4 p {
+  margin-left: 20px;
+  color: #333;
+}
+
+@media only screen and (min-width: 950px) {
+  .favorite {
+    margin-top: 100px;
+  }
+
+  .favorite h1 {
+    font-size: 2rem;
+  }
+
+  .favorite .btns {
+    width: 80%;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .btns button {
+    font-size: 0.9rem;
+    margin: auto 50px;
+    letter-spacing: 2px;
+  }
+  .btns .underline {
+    position: absolute;
+    bottom: -2.3px;
+    left: 200px;
+    width: 150px;
+    height: 2px;
+    background-color: #333;
+    transition: 200ms;
+  }
+  .underline.secIndex {
+    transform: translateX(225px);
+  }
+  .underline.lastIndex {
+    transform: translateX(470px);
+  }
+
+  .col-4 {
+    width: 300px;
+  }
+  .col-4 .colImg {
+    width: 300px;
+  }
+  .col-4 .overley {
+    width: 300px;
+  }
+}

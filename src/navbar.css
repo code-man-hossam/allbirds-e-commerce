@@ -1,0 +1,126 @@
+.navbar {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.nav-links {
+  display: none;
+}
+
+.bars {
+  background-color: transparent;
+  padding-left: 20px;
+  outline: none;
+  border: none;
+}
+.bars > svg {
+  cursor: pointer;
+  float: left;
+  font-size: 2rem;
+  transition: 300ms;
+}
+.bars > svg:hover {
+  transform: scale(1.1);
+}
+
+.nav-shop {
+  background-color: transparent;
+  padding-right: 20px;
+  outline: none;
+  border: none;
+}
+.nav-shop > svg {
+  cursor: pointer;
+  float: right;
+  font-size: 2rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  max-width: 110px;
+  max-height: 100px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.nav-category {
+  display: none;
+}
+
+@media only screen and (min-width: 950px) {
+  .nav-category {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .nav-category li button {
+    background-color: transparent;
+    color: #333;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 100ms;
+  }
+  .nav-category li button:hover {
+    border-bottom: 1px solid #333;
+  }
+  .nav-category li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8rem;
+    transition: 100ms;
+    font-weight: 700;
+  }
+  .nav-category li a:hover {
+    border-bottom: 1px solid #333;
+  }
+  .bars {
+    display: none;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 60px;
+  }
+  .nav-links li {
+    margin-right: 30px;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 0.72rem;
+  }
+  .nav-links li button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+  .nav-links li button svg {
+    color: #333;
+    font-weight: 700;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+  .nav-shop {
+    display: none;
+  }
+}
