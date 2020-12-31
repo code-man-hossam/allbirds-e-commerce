@@ -15,10 +15,11 @@ const BuyShoes = () => {
 
   useEffect(() => {
     ShoesImgs.map((item) => {
-      if (item.id == id) {
+      if (item.id === id) {
         setImage(item.img)
         setTitle(item.title)
       }
+      return item
     })
   }, [id])
   return (

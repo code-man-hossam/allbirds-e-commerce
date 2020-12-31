@@ -16,7 +16,7 @@ const SignUp = () => {
             <input type='password' id='password' className='password' />
           </div>
           <button type='submit'>sign in</button>
-          <a href='#'>forget password</a>
+          <a href='https://forget/password'>forget password</a>
         </form>
       </div>
       <div className='sign'>
@@ -46,7 +46,7 @@ const SignUp = () => {
             <input type='password' id='password' className='password' />
           </div>
           <button type='submit'>register</button>
-          <a href='#'>
+          <a href='https://forget/password'>
             By creating an account, you agree to our Terms of Use and Privacy
             Policy.
           </a>

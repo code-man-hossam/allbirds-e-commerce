@@ -37,8 +37,8 @@ const Shoes = () => {
           const { id, img, title, info } = item
 
           return (
-            <Link to={`/shop-shoes/${id}`}>
-              <div className='shoe-col' key={id}>
+            <Link to={`/shop-shoes/${id}`} key={id}>
+              <div className='shoe-col'>
                 <div className='shoe-colImg'>
                   <img src={img} alt='' />
                 </div>
